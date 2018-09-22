@@ -91,9 +91,15 @@ def find_dist(coordinate, paths):
     
     
 def select_pois(fs, x):
+    def print_t(*args):
+        print('"' + '","'.join([str(_) for _ in args]) + '"')
+        
+    c = 0
     for f in fs:
         if x(f['properties']['name']):
-            print(f['properties']['name'], f['geometry']['coordinates'][0], f['geometry']['coordinates'][1])
+            c += 1
+            print_t(f['properties']['name'], f['geometry']['coordinates'][0], f['geometry']['coordinates'][1])
+    return c
     
 
 def read_pois(x):
