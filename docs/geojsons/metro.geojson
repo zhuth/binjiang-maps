@@ -1,0 +1,1318 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.522705833458,
+                    31.2308645814737
+                ]
+            },
+            "properties": {
+                "description": "名称:世纪大道[地铁站]\r\n地址:地铁2号线,地铁6号线,地铁9号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.448428901326,
+                    31.1746986861563
+                ]
+            },
+            "properties": {
+                "description": "名称:龙华[地铁站]\r\n地址:地铁11号线支线,地铁11号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.478055829243,
+                    31.2457933239163
+                ]
+            },
+            "properties": {
+                "description": "名称:天潼路[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.431563148768,
+                    31.1961286910947
+                ]
+            },
+            "properties": {
+                "description": "名称:徐家汇[地铁站]\r\n地址:地铁11号线支线,地铁11号线,地铁1号线,地铁9号线等4条线路\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.480188864149,
+                    31.2401186368472
+                ]
+            },
+            "properties": {
+                "description": "名称:南京东路[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁2号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.427153290977,
+                    31.2486910937545
+                ]
+            },
+            "properties": {
+                "description": "名称:镇坪路[地铁站]\r\n地址:地铁7号线,地铁3号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.471057970812,
+                    31.2346791824706
+                ]
+            },
+            "properties": {
+                "description": "名称:人民广场[地铁站]\r\n地址:地铁1号线,地铁2号线,地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.426046042279,
+                    31.2221875969036
+                ]
+            },
+            "properties": {
+                "description": "名称:江苏路[地铁站]\r\n地址:地铁11号线支线,地铁11号线,地铁2号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.484353202825,
+                    31.2612885023207
+                ]
+            },
+            "properties": {
+                "description": "名称:海伦路[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.470131242356,
+                    31.2176577930402
+                ]
+            },
+            "properties": {
+                "description": "名称:新天地[地铁站]\r\n地址:地铁13号线,地铁10号线,地铁10号线支线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.430565016673,
+                    31.2042142514007
+                ]
+            },
+            "properties": {
+                "description": "名称:交通大学[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁11号线支线,地铁11号线等4条线路\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.42271281329,
+                    31.1860549964851
+                ]
+            },
+            "properties": {
+                "description": "名称:宜山路[地铁站]\r\n地址:地铁9号线,地铁3号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.451188389176,
+                    31.2493291966333
+                ]
+            },
+            "properties": {
+                "description": "名称:上海火车站[地铁站]\r\n地址:地铁1号线,地铁3号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.457971735035,
+                    31.2305120375148
+                ]
+            },
+            "properties": {
+                "description": "名称:南京西路[地铁站]\r\n地址:地铁13号线,地铁2号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.47591305185,
+                    31.1553270147056
+                ]
+            },
+            "properties": {
+                "description": "名称:东方体育中心[地铁站]\r\n地址:地铁11号线支线,地铁11号线,地铁6号线,地铁8号线等4条线路\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.453994241353,
+                    31.2172716629282
+                ]
+            },
+            "properties": {
+                "description": "名称:陕西南路[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁1号线,地铁12号线等4条线路\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.454002166693,
+                    31.2427613211446
+                ]
+            },
+            "properties": {
+                "description": "名称:汉中路[地铁站]\r\n地址:地铁13号线,地铁1号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.479228466998,
+                    31.2210518854997
+                ]
+            },
+            "properties": {
+                "description": "名称:老西门[地铁站]\r\n地址:地铁10号线,地铁10号线支线,地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.518605283508,
+                    31.1485282541537
+                ]
+            },
+            "properties": {
+                "description": "名称:三林东[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.439807099846,
+                    31.2099822578274
+                ]
+            },
+            "properties": {
+                "description": "名称:上海图书馆[地铁站]\r\n地址:地铁10号线,地铁10号线支线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.507122045548,
+                    31.1452622362438
+                ]
+            },
+            "properties": {
+                "description": "名称:三林[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.481653490467,
+                    31.2137873329986
+                ]
+            },
+            "properties": {
+                "description": "名称:陆家浜路[地铁站]\r\n地址:地铁8号线,地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.452591465679,
+                    31.1860061634735
+                ]
+            },
+            "properties": {
+                "description": "名称:龙华中路[地铁站]\r\n地址:地铁7号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.485068297104,
+                    31.2039755873462
+                ]
+            },
+            "properties": {
+                "description": "名称:西藏南路[地铁站]\r\n地址:地铁8号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.439859210688,
+                    31.171595423074
+                ]
+            },
+            "properties": {
+                "description": "名称:龙漕路[地铁站]\r\n地址:地铁3号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.471657847938,
+                    31.2121629162669
+                ]
+            },
+            "properties": {
+                "description": "名称:马当路[地铁站]\r\n地址:地铁13号线,地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.471894131108,
+                    31.2535026652235
+                ]
+            },
+            "properties": {
+                "description": "名称:宝山路[地铁站]\r\n地址:地铁3号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.445700354519,
+                    31.2014048063947
+                ]
+            },
+            "properties": {
+                "description": "名称:肇嘉浜路[地铁站]\r\n地址:地铁9号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.508343198378,
+                    31.2602550097644
+                ]
+            },
+            "properties": {
+                "description": "名称:大连路[地铁站]\r\n地址:地铁4号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.490164798188,
+                    31.1805639194636
+                ]
+            },
+            "properties": {
+                "description": "名称:耀华路[地铁站]\r\n地址:地铁8号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.430206030508,
+                    31.1702193819835
+                ]
+            },
+            "properties": {
+                "description": "名称:漕宝路[地铁站]\r\n地址:地铁1号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.446776005454,
+                    31.2155223505621
+                ]
+            },
+            "properties": {
+                "description": "名称:常熟路[地铁站]\r\n地址:地铁1号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.42507925067,
+                    31.1567127466861
+                ]
+            },
+            "properties": {
+                "description": "名称:上海南站[地铁站]\r\n地址:地铁1号线,地铁3号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.454098929389,
+                    31.168537820653
+                ]
+            },
+            "properties": {
+                "description": "名称:云锦路[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.458870893965,
+                    31.1960609333588
+                ]
+            },
+            "properties": {
+                "description": "名称:大木桥路[地铁站]\r\n地址:地铁4号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.482958255929,
+                    31.2299659572856
+                ]
+            },
+            "properties": {
+                "description": "名称:豫园[地铁站]\r\n地址:地铁10号线,地铁10号线支线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.467032803357,
+                    31.2442826514534
+                ]
+            },
+            "properties": {
+                "description": "名称:曲阜路[地铁站]\r\n地址:地铁8号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.479852316507,
+                    31.2540041904676
+                ]
+            },
+            "properties": {
+                "description": "名称:四川北路[地铁站]\r\n地址:地铁10号线,地铁10号线支线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.455043098813,
+                    31.1617506338927
+                ]
+            },
+            "properties": {
+                "description": "名称:龙耀路[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.442135394385,
+                    31.2252734739437
+                ]
+            },
+            "properties": {
+                "description": "名称:静安寺[地铁站]\r\n地址:地铁2号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.436485173966,
+                    31.2564937154711
+                ]
+            },
+            "properties": {
+                "description": "名称:中潭路[地铁站]\r\n地址:地铁3号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.431856823547,
+                    31.1843443050184
+                ]
+            },
+            "properties": {
+                "description": "名称:上海体育馆[地铁站]\r\n地址:地铁1号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.456212837847,
+                    31.2047652349335
+                ]
+            },
+            "properties": {
+                "description": "名称:嘉善路[地铁站]\r\n地址:地铁9号线,地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.505407276815,
+                    31.1877369360174
+                ]
+            },
+            "properties": {
+                "description": "名称:高科西路[地铁站]\r\n地址:地铁6号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.436884375388,
+                    31.1809908881052
+                ]
+            },
+            "properties": {
+                "description": "名称:上海游泳馆[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.534862012688,
+                    31.1530462304566
+                ]
+            },
+            "properties": {
+                "description": "名称:浦三路[地铁站]\r\n地址:地铁11号线支线,地铁11号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.450314233266,
+                    31.1928289669608
+                ]
+            },
+            "properties": {
+                "description": "名称:东安路[地铁站]\r\n地址:地铁7号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.523562733265,
+                    31.213896902777
+                ]
+            },
+            "properties": {
+                "description": "名称:蓝村路[地铁站]\r\n地址:地铁6号线,地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.433820799383,
+                    31.2427431774102
+                ]
+            },
+            "properties": {
+                "description": "名称:长寿路[地铁站]\r\n地址:地铁13号线,地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.485306635553,
+                    31.1431012537131
+                ]
+            },
+            "properties": {
+                "description": "名称:凌兆新村[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.43896415411,
+                    31.1875018119749
+                ]
+            },
+            "properties": {
+                "description": "名称:上海体育场[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.477071714117,
+                    31.1997469773003
+                ]
+            },
+            "properties": {
+                "description": "名称:世博会博物馆[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.482036120869,
+                    31.1768629268172
+                ]
+            },
+            "properties": {
+                "description": "名称:长清路[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.512074851108,
+                    31.2324088476043
+                ]
+            },
+            "properties": {
+                "description": "名称:商城路[地铁站]\r\n地址:地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.464426656433,
+                    31.2550871486922
+                ]
+            },
+            "properties": {
+                "description": "名称:中兴路[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.515115835048,
+                    31.2421454251306
+                ]
+            },
+            "properties": {
+                "description": "名称:浦东大道[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.440428275041,
+                    31.2462787179935
+                ]
+            },
+            "properties": {
+                "description": "名称:江宁路[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.463583598724,
+                    31.2406758688931
+                ]
+            },
+            "properties": {
+                "description": "名称:新闸路[地铁站]\r\n地址:地铁1号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.497974802473,
+                    31.239760475997
+                ]
+            },
+            "properties": {
+                "description": "名称:陆家嘴[地铁站]\r\n地址:地铁2号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.475708214337,
+                    31.2619131628787
+                ]
+            },
+            "properties": {
+                "description": "名称:东宝兴路[地铁站]\r\n地址:地铁3号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.496017245353,
+                    31.1841727686901
+                ]
+            },
+            "properties": {
+                "description": "名称:云台路[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.530048495185,
+                    31.235002131745
+                ]
+            },
+            "properties": {
+                "description": "名称:源深体育中心[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.442187181634,
+                    31.2069139646209
+                ]
+            },
+            "properties": {
+                "description": "名称:衡山路[地铁站]\r\n地址:地铁1号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.469219672426,
+                    31.1738030181444
+                ]
+            },
+            "properties": {
+                "description": "名称:后滩[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.540092135787,
+                    31.2211297358678
+                ]
+            },
+            "properties": {
+                "description": "名称:上海科技馆[地铁站]\r\n地址:地铁2号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.52072794872,
+                    31.1896575265185
+                ]
+            },
+            "properties": {
+                "description": "名称:杨高南路[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.544439466208,
+                    31.2295991688404
+                ]
+            },
+            "properties": {
+                "description": "名称:杨高中路[地铁站]\r\n地址:地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.527628806012,
+                    31.225049757675
+                ]
+            },
+            "properties": {
+                "description": "名称:浦电路(4号线)[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.489124407675,
+                    31.1871158265612
+                ]
+            },
+            "properties": {
+                "description": "名称:中华艺术宫[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.495180247387,
+                    31.2104022119406
+                ]
+            },
+            "properties": {
+                "description": "名称:南浦大桥[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.514349764671,
+                    31.211699214109
+                ]
+            },
+            "properties": {
+                "description": "名称:塘桥[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.510730306699,
+                    31.2352962759893
+                ]
+            },
+            "properties": {
+                "description": "名称:东昌路[地铁站]\r\n地址:地铁2号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.535858202122,
+                    31.1897017118965
+                ]
+            },
+            "properties": {
+                "description": "名称:锦绣路[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.51234251915,
+                    31.1952716433834
+                ]
+            },
+            "properties": {
+                "description": "名称:临沂新村[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.502484905655,
+                    31.2555143697046
+                ]
+            },
+            "properties": {
+                "description": "名称:提篮桥[地铁站]\r\n地址:地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.539012041544,
+                    31.2379070892645
+                ]
+            },
+            "properties": {
+                "description": "名称:民生路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.464476126708,
+                    31.2082576138954
+                ]
+            },
+            "properties": {
+                "description": "名称:打浦桥[地铁站]\r\n地址:地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.454599915343,
+                    31.2609033497339
+                ]
+            },
+            "properties": {
+                "description": "名称:中山北路[地铁站]\r\n地址:地铁1号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.45988475297,
+                    31.2223921056867
+                ]
+            },
+            "properties": {
+                "description": "名称:淮海中路[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.470667785492,
+                    31.2010888732962
+                ]
+            },
+            "properties": {
+                "description": "名称:鲁班路[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.489162495189,
+                    31.1630256690317
+                ]
+            },
+            "properties": {
+                "description": "名称:杨思[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.524742908971,
+                    31.2220917502602
+                ]
+            },
+            "properties": {
+                "description": "名称:浦电路(6号线)[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.433710081791,
+                    31.1786911162746
+                ]
+            },
+            "properties": {
+                "description": "名称:漕溪路[地铁站]\r\n地址:地铁3号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.512740271875,
+                    31.2541333628926
+                ]
+            },
+            "properties": {
+                "description": "名称:杨树浦路[地铁站]\r\n地址:地铁4号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.502128069745,
+                    31.1511213293029
+                ]
+            },
+            "properties": {
+                "description": "名称:上南路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.519175459482,
+                    31.2059821763088
+                ]
+            },
+            "properties": {
+                "description": "名称:上海儿童医学中心[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.479785950637,
+                    31.1849339595605
+                ]
+            },
+            "properties": {
+                "description": "名称:世博大道[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.506450569773,
+                    31.1747223130678
+                ]
+            },
+            "properties": {
+                "description": "名称:东明路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.43872360139,
+                    31.1598754860474
+                ]
+            },
+            "properties": {
+                "description": "名称:石龙路[地铁站]\r\n地址:地铁3号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.511369380377,
+                    31.1616336960932
+                ]
+            },
+            "properties": {
+                "description": "名称:高青路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.457846857433,
+                    31.2384732928279
+                ]
+            },
+            "properties": {
+                "description": "名称:自然博物馆[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.493728582671,
+                    31.252089668308
+                ]
+            },
+            "properties": {
+                "description": "名称:国际客运中心[地铁站]\r\n地址:地铁12号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.490573737811,
+                    31.1509811623461
+                ]
+            },
+            "properties": {
+                "description": "名称:灵岩南路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.509932221778,
+                    31.1518479998644
+                ]
+            },
+            "properties": {
+                "description": "名称:华夏西路[地铁站]\r\n地址:地铁6号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.474798660709,
+                    31.2291993660803
+                ]
+            },
+            "properties": {
+                "description": "名称:大世界[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.438028887735,
+                    31.235639202398
+                ]
+            },
+            "properties": {
+                "description": "名称:昌平路[地铁站]\r\n地址:地铁7号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.425802688112,
+                    31.2361765274614
+                ]
+            },
+            "properties": {
+                "description": "名称:武宁路[地铁站]\r\n地址:地铁13号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.491795545166,
+                    31.1728236868014
+                ]
+            },
+            "properties": {
+                "description": "名称:成山路[地铁站]\r\n地址:地铁8号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.468794752397,
+                    31.2247603068374
+                ]
+            },
+            "properties": {
+                "description": "名称:黄陂南路[地铁站]\r\n地址:地铁1号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.494031899625,
+                    31.2189566659611
+                ]
+            },
+            "properties": {
+                "description": "名称:小南门[地铁站]\r\n地址:地铁9号线\r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.48174244609,
+                    31.1771662459426
+                ]
+            },
+            "properties": {
+                "description": "名称:长清路地铁站-1号出口[地铁站]\r\n地址: \r\n电话: \r\n类别:基础设施:交通设施:地铁站\r\n"
+            }
+        }
+    ]
+}

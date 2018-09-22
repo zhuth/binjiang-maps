@@ -1,0 +1,291 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.51933,
+                    31.24429
+                ]
+            },
+            "properties": {
+                "description": "上海轮渡(滨江大道)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.42693,
+                    30.99811
+                ]
+            },
+            "properties": {
+                "description": "闵行轮渡站"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.47315,
+                    31.18464
+                ]
+            },
+            "properties": {
+                "description": "L6轮渡码头"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.49294,
+                    31.23276
+                ]
+            },
+            "properties": {
+                "description": "外滩轮渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.48361,
+                    31.18773
+                ]
+            },
+            "properties": {
+                "description": "L4轮渡码头"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.49289,
+                    31.23255
+                ]
+            },
+            "properties": {
+                "description": "上海轮渡"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.50416,
+                    31.22292
+                ]
+            },
+            "properties": {
+                "description": "复兴东路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.50881,
+                    31.22424
+                ]
+            },
+            "properties": {
+                "description": "杨家渡渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.50132,
+                    31.37462
+                ]
+            },
+            "properties": {
+                "description": "吴淞渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.66571,
+                    31.14014
+                ]
+            },
+            "properties": {
+                "description": "星愿湖轮渡"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.56782,
+                    31.26915
+                ]
+            },
+            "properties": {
+                "description": "金桥路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.53816,
+                    31.34494
+                ]
+            },
+            "properties": {
+                "description": "草镇轮渡站"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.53393,
+                    31.25141
+                ]
+            },
+            "properties": {
+                "description": "丹东路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.50437,
+                    31.20773
+                ]
+            },
+            "properties": {
+                "description": "陆家浜路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.23926,
+                    30.9625
+                ]
+            },
+            "properties": {
+                "description": "米市渡轮渡站"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.46602,
+                    31.13622
+                ]
+            },
+            "properties": {
+                "description": "三林路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.46789,
+                    31.08535
+                ]
+            },
+            "properties": {
+                "description": "车沟桥渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.55849,
+                    31.31551
+                ]
+            },
+            "properties": {
+                "description": "嫩江路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.56623,
+                    31.31555
+                ]
+            },
+            "properties": {
+                "description": "东塘路轮渡站"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.45882,
+                    31.13332
+                ]
+            },
+            "properties": {
+                "description": "港口渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.51645,
+                    31.24956
+                ]
+            },
+            "properties": {
+                "description": "秦皇岛路渡口"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    121.54237,
+                    31.25658
+                ]
+            },
+            "properties": {
+                "description": "宁国路渡口"
+            }
+        }
+    ]
+}
