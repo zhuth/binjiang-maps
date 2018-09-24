@@ -66,10 +66,12 @@
 	}
 </style>
 
-<nav id="menu"></nav>
+<nav id="menu">
+<a id="loader"><select id="atype"><option value="symbol">标记</option><option value="heatmap">热力图</option></select><br/><select id="filename"><option value="">加载文件</option></select></a>
+</nav>
 <div id="map"></div>
-<div id="copyright">&copy; 2018 上海社科院文学所课题组<br />制图：朱恬骅 <a href="sources.html" target="_blank">数据来源</a></div>
-
+<div id="copyright">&copy; 2018 上海社科院文学所课题组<!-- <br />制图：朱恬骅 --> <a href="sources.html" target="_blank">数据来源</a></div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoiemh1dGgiLCJhIjoiY2ptOGNnbTcyMDA5bjNxcjF6bG1pOGR6ciJ9.SC1C73pxf6UqDlReAfcSJw';
 var map = new mapboxgl.Map({
@@ -124,6 +126,90 @@ map.on('load', function () {
 		var layers = document.getElementById('menu');
 		layers.appendChild(link);
 	}
+});
+
+$.get('geojsons.txt', function (data) {
+	var lines = data.split('\r\n');
+	for (var i = 0; i < lines.length; ++i) {
+		var line = lines[i].trim();
+		if (line.length > 0) {
+			$('#loader select#filename').append('<option value="##">##</option>'.replace(/##/g, line.split('.')[0]));
+		}
+	}
+	$('#loader select#filename').change(function () {
+		if (this.value !== '') {
+			var id = this.value;
+			var atype = $('#loader select#atype').val();
+			var layout = atype == 'symbol' ? {
+					"icon-image": "marker-15",
+					"text-field": "{name}",
+					"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+					"text-offset": [0, 0.6],
+					"text-anchor": "top"
+				} : {};
+			var paint = atype == 'heatmap' ? {
+            // Increase the heatmap weight based on frequency and property magnitude
+            "heatmap-weight": [
+                "interpolate",
+                ["linear"],
+                ["get", "mag"],
+                0, 0,
+                6, 1
+            ],
+            // Increase the heatmap color weight weight by zoom level
+            // heatmap-intensity is a multiplier on top of heatmap-weight
+            "heatmap-intensity": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                0, 1,
+                9, 3
+            ],
+            // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+            // Begin color ramp at 0-stop with a 0-transparancy color
+            // to create a blur-like effect.
+            "heatmap-color": [
+                "interpolate",
+                ["linear"],
+                ["heatmap-density"],
+                0, "rgba(33,102,172,0)",
+                0.2, "rgb(103,169,207)",
+                0.4, "rgb(209,229,240)",
+                0.6, "rgb(253,219,199)",
+                0.8, "rgb(239,138,98)",
+                1, "rgb(178,24,43)"
+            ],
+            // Adjust the heatmap radius by zoom level
+            "heatmap-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                0, 2,
+                9, 20
+            ],
+            // Transition from heatmap to circle layer by zoom level
+            "heatmap-opacity": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                7, 1,
+                9, 0
+            ],
+        } : {};
+			var fid = 'l-' + atype + '-' + id;
+			if (map.getLayer(fid) !== undefined) map.removeLayer('l-' + id);
+			map.addLayer({
+				"id": fid,
+				"type": atype,
+				"source": {
+					'type': 'geojson',
+					'data': 'geojsons/' + id + '.geojson',
+				},
+				"layout": layout
+				//"paint": paint
+			});
+		}
+	});
 });
 </script>
 
