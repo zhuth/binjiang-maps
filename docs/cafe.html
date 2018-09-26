@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>餐饮业分类地图</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<style>
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
+	
+	#copyright {
+		position: fixed;
+		bottom: 0;
+		padding: 10px 10px 10px 10px;
+		font-size: 12px;
+		background: rgba(255,255,255,0.5);
+		z-index: 10293;
+	}
+</style>
+
+<nav id="menu">
+<a id="loader"><select id="atype"><option value="symbol">标记</option><option value="heatmap">热力图</option></select><br/><select id="filename"><option value="">加载文件</option></select></a>
+</nav>
+<div id="map"></div>
+<div id="copyright">&copy; 2018 上海社科院文学所课题组<!-- <br />制图：朱恬骅 --> <a href="sources.html" target="_blank">数据来源</a></div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoiemh1dGgiLCJhIjoiY2ptOGNnbTcyMDA5bjNxcjF6bG1pOGR6ciJ9.SC1C73pxf6UqDlReAfcSJw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/zhuth/cjm8clqf6ekbl2snxsl8mfj1x',
+    zoom: 10.4,
+    center: [121.613, 31.1787]
+});
+var toggleableLayerIds = [ 
+	['外国餐馆', 'restaurant'],
+	['咖啡馆', 'coffee'],
+	['酒吧', 'bar']
+];
+
+map.on('load', function () {
+
+	var paint = {
+            "heatmap-weight": ["interpolate", ["linear"], 1, 0, 0, 6, 1],
+            "heatmap-intensity": ["interpolate", ["linear"], ["zoom"], 0, 1, 14, 10],
+            // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+            // Begin color ramp at 0-stop with a 0-transparancy color
+            // to create a blur-like effect.
+            "heatmap-color": [],
+            // Adjust the heatmap radius by zoom level
+            "heatmap-radius": ["interpolate", ["linear"], ["zoom"], 0, 2, 14, 20],
+            // Transition from heatmap to circle layer by zoom level
+            "heatmap-opacity": ["interpolate", ["linear"], ["zoom"], 7, 1, 16, 0],
+        };
+
+	paint["heatmap-color"] = [
+                "interpolate",
+                ["linear"],
+                ["heatmap-density"],
+                0, "rgba(255,255,255,0)",
+                0.2, "hsl(120,40%,100%)",
+                0.4, "hsl(120,50%,80%)",
+                0.6, "hsl(120,60%,70%)",
+                0.8, "hsl(120,70%,60%)",
+                1, "hsl(120,90%,50%)"
+            ];
+			
+	map.addLayer({
+        "id": "restaurant",
+        "type": "heatmap",
+        "source": {"type": "geojson", "data": "geojsons/sh-0502.geojson"},
+		"paint": paint
+    });
+
+	paint["heatmap-color"] = [
+                "interpolate",
+                ["linear"],
+                ["heatmap-density"],
+                0, "rgba(255,255,255,0)",
+                0.2, "hsl(60,40%,100%)",
+                0.4, "hsl(60,50%,80%)",
+                0.6, "hsl(60,60%,70%)",
+                0.8, "hsl(60,70%,60%)",
+                1, "hsl(60,90%,50%)"
+            ];
+			
+	map.addLayer({
+        "id": "coffee",
+        "type": "heatmap",
+        "source": {"type": "geojson", "data": "geojsons/sh-0505.geojson"},
+        "paint": paint
+    });
+
+	paint["heatmap-color"] = [
+                "interpolate",
+                ["linear"],
+                ["heatmap-density"],
+                0, "rgba(255,255,255,0)",
+                0.2, "hsl(0,40%,100%)",
+                0.4, "hsl(0,50%,80%)",
+                0.6, "hsl(0,60%,70%)",
+                0.8, "hsl(0,70%,60%)",
+                1, "hsl(0,90%,50%)"
+            ];
+			
+	map.addLayer({
+        "id": "bar",
+        "type": "heatmap",
+        "source": {"type": "geojson", "data": "geojsons/sh-080304.geojson"},
+        "paint": paint
+    });
+
+	for (var i = 0; i < toggleableLayerIds.length; i++) {
+		var id = toggleableLayerIds[i][1], disp_text = toggleableLayerIds[i][0];
+
+		var link = document.createElement('a');
+		link.href = '#';
+		link.className = map.getLayoutProperty(id, 'visibility') === 'visible' ? 'active' : '';
+		link.textContent = disp_text;
+		link.data = id;
+
+		link.onclick = function (e) {
+			var clickedLayer = this.data;
+			e.preventDefault();
+			e.stopPropagation();
+
+			var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+			if (visibility === 'visible') {
+				map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+				this.className = '';
+			} else {
+				this.className = 'active';
+				map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+			}
+		};
+
+		var layers = document.getElementById('menu');
+		layers.appendChild(link);
+	}
+});
+
+$.get('geojsons.txt', function (data) {
+	var lines = data.split('\n');
+	if (location.hash.length > 1) {
+		lines.push(location.hash.substr(1));
+	}
+	for (var i = 0; i < lines.length; ++i) {
+		var line = lines[i].trim();
+		if (line.length > 0) {
+			$('#loader select#filename').append('<option value="##">##</option>'.replace(/##/g, line.split('.')[0]));
+		}
+	}
+	$('#loader select').change(function () {
+		if (this.value !== '') {
+			var id = this.value;
+			var atype = $('#loader select#atype').val();
+			var layout = atype == 'symbol' ? {
+					"icon-image": "marker-15",
+					"text-field": "{name}",
+					"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+					"text-offset": [0, 0.6],
+					"text-anchor": "top"
+				} : {};
+			var paint = atype == 'heatmap' ? {
+            // Increase the heatmap weight based on frequency and property magnitude
+            "heatmap-weight": [
+                "interpolate",
+                ["linear"],
+                ["get", "mag"],
+                0, 0,
+                6, 1
+            ],
+            // Increase the heatmap color weight weight by zoom level
+            // heatmap-intensity is a multiplier on top of heatmap-weight
+            "heatmap-intensity": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                0, 1,
+                9, 3
+            ],
+            // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+            // Begin color ramp at 0-stop with a 0-transparancy color
+            // to create a blur-like effect.
+            "heatmap-color": [
+                "interpolate",
+                ["linear"],
+                ["heatmap-density"],
+                0, "rgba(33,102,172,0)",
+                0.2, "rgb(103,169,207)",
+                0.4, "rgb(209,229,240)",
+                0.6, "rgb(253,219,199)",
+                0.8, "rgb(239,138,98)",
+                1, "rgb(178,24,43)"
+            ],
+            // Adjust the heatmap radius by zoom level
+            "heatmap-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                0, 2,
+                9, 20
+            ],
+            // Transition from heatmap to circle layer by zoom level
+            "heatmap-opacity": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                7, 1,
+                9, 0
+            ],
+        } : {};
+			var fid = 'l-' + atype + '-' + id;
+			if (map.getLayer(fid) !== undefined) map.removeLayer('l-' + id);
+			map.addLayer({
+				"id": fid,
+				"type": atype,
+				"source": {
+					'type': 'geojson',
+					'data': 'geojsons/' + id + '.geojson',
+				},
+				"layout": layout
+				//"paint": paint
+			});
+		}
+	});
+});
+</script>
+
+</body>
+</html>

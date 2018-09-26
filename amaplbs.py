@@ -35,11 +35,42 @@ def bd2wgs(lon, lat):
     return gcj2wgs(*bd2gcj(lon, lat))
 
 
+import amapconfig
+
+
+def amap_poi(city, type):
+    u = 'https://restapi.amap.com/v3/place/text?key=%s&keywords=&citylimit=true&city={}&types={}&page={}' % (amapconfig.apikey,)
+    print(citycode, category)
+    pages = 1
+    fs = []
+    i = 0
+    while i < pages:
+        print(len(fs), '{}/{}'.format(i, pages))
+        w=u.format(citycode, category + '00', i)
+        time.sleep(0.1)
+        j=requests.get(w).content
+        j=json.loads(j)
+        fs += [{'type':'Feature', 'geometry': {'type':'Point', 'coordinates': [[float(_) for _ in r['location'].split(',')]]}, 'properties':{'name':r['name'], 'biz':r['typecode'] + ' ' + r['type']}} for r in j['pois']]
+        i += 1
+        pages = int(math.ceil(int(j['count']) / 20))
+    return fs
+    
+    
+def amap_geocode(city, address):
+    if isinstance(address, list):
+        address = '|'.join(address)
+    batch = '|' in address
+    u = 'https://restapi.amap.com/v3/geocode/geo?key={}&city={}&address={}&batch={}'.format(amapconfig.apikey, city, address, 'true' if batch else 'false')
+    j = json.loads(requests.get(u).content)
+    if 'geocodes' in j:
+        j = [_['location'] for _ in j['geocodes']]
+    return j
+    
+
 if __name__ == '__main__':
     # keyword = sys.argv[1]
     # kw  = quote(keyword)
     import amapconfig
-    u = 'https://restapi.amap.com/v3/place/text?key=%s&keywords=&citylimit=true&city={}&types={}&page={}' % (amapconfig.apikey,)
     fs = []
 
     if os.path.exists('output.geojson'):
@@ -51,20 +82,7 @@ if __name__ == '__main__':
         310113,310114,310115,310116,
         310117,310118,310120,310151]:
         for category in amapconfig.attractions:
-            #if not category.endswith('00'): continue
-            print(citycode, category)
-            pages = 1
-            i = 0
-            while i < pages:
-                print(len(fs), '{}/{}'.format(i, pages))
-                w=u.format(citycode, category + '00', i)
-                time.sleep(0.1)
-                j=requests.get(w).content
-                j=json.loads(j)
-                fs += [{'type':'Feature', 'geometry': {'type':'Point', 'coordinates': [[float(_) for _ in r['location'].split(',')]]}, 'properties':{'name':r['name'], 'biz':r['typecode'] + ' ' + r['type']}} for r in j['pois']]
-                i += 1
-                pages = int(math.ceil(int(j['count']) / 20))
-
+            fs += amap_poi(citycode, category)
             save_pois(fs, 'output.geojson')
     
     import glob
