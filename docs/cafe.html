@@ -98,7 +98,7 @@ map.on('load', function () {
             // Adjust the heatmap radius by zoom level
             "heatmap-radius": ["interpolate", ["linear"], ["zoom"], 0, 2, 14, 20],
             // Transition from heatmap to circle layer by zoom level
-            "heatmap-opacity": ["interpolate", ["linear"], ["zoom"], 7, 1, 16, 0],
+            "heatmap-opacity": ["interpolate", ["linear"], ["zoom"], 7, 1, 16, 0.4],
         };
 
 	paint["heatmap-color"] = [
