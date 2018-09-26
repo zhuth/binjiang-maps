@@ -130,13 +130,16 @@ map.on('load', function () {
 
 $.get('geojsons.txt', function (data) {
 	var lines = data.split('\n');
+	if (location.hash.length > 1) {
+		lines.push(location.hash.substr(1));
+	}
 	for (var i = 0; i < lines.length; ++i) {
 		var line = lines[i].trim();
 		if (line.length > 0) {
 			$('#loader select#filename').append('<option value="##">##</option>'.replace(/##/g, line.split('.')[0]));
 		}
 	}
-	$('#loader select#filename').change(function () {
+	$('#loader select').change(function () {
 		if (this.value !== '') {
 			var id = this.value;
 			var atype = $('#loader select#atype').val();
