@@ -129,7 +129,7 @@ map.on('load', function () {
 });
 
 $.get('geojsons.txt', function (data) {
-	var lines = data.split('\r\n');
+	var lines = data.split('\n');
 	for (var i = 0; i < lines.length; ++i) {
 		var line = lines[i].trim();
 		if (line.length > 0) {
