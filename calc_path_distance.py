@@ -7,6 +7,7 @@ import glob
 import math
 import numpy as np
 import json
+from amaplbs import save_pois
 from shapely.geometry import Polygon
 from pyproj import Proj, transform
 EARTH_RADIUS = 6378137
@@ -94,12 +95,11 @@ def select_pois(fs, x):
     def print_t(*args):
         print('"' + '","'.join([str(_) for _ in args]) + '"')
         
-    c = 0
+    r = []
     for f in fs:
         if x(f['properties']['name']):
-            c += 1
-            print_t(f['properties']['name'], f['geometry']['coordinates'][0], f['geometry']['coordinates'][1])
-    return c
+            r.append(f)
+    return r
     
 
 def read_pois(x):
@@ -131,7 +131,7 @@ if __name__ == '__main__':
     # print(puxi / get_len(paths['浦西浦江']))
     # 
     # print(polygon_area(combine_paths(paths['pdresident'], paths['浦东'])) / get_len(paths['浦东']))
-    # print(polygon_area(combine_paths(paths['pxresident'], paths['浦西连结'])) / get_len(paths['浦西连结']))
+    # print(polygon_area(combine_paths(paths['pxident'], paths['浦西连结'])) / get_len(paths['浦西连结']))
     
     wgs84 = Proj('+proj=longlat +datum=WGS84 +no_defs') 
     epsg26715 = Proj(init='epsg:26715')
