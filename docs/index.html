@@ -140,8 +140,9 @@ $.get('geojsons.txt', function (data) {
 		}
 	}
 	$('#loader select').change(function () {
-		if (this.value !== '') {
-			var id = this.value;
+		var $file = $('#loader select#filename');
+		if ($file.val() !== '') {
+			var id = $file.val();
 			var atype = $('#loader select#atype').val();
 			var layout = atype == 'symbol' ? {
 					"icon-image": "marker-15",

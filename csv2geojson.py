@@ -8,6 +8,6 @@ loci = list(p).index('location')
 save_pois([
     {
         'type':'Feature', 
-        'geometry': {'type':'Point', 'coordinates': [[float(_) for _ in r[loci].split(',')]]}, 
+        'geometry': {'type':'Point', 'coordinates': [float(_) for _ in r[loci].split(',')]}, 
         'properties': dict([(k, r[ki]) for ki, k in enumerate(p)])
     } for r in p.values], sys.argv[2])
