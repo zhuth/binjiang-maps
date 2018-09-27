@@ -1,2 +1,6 @@
+__pycache__
+.*
 ._*
-amapconfig.py
+*.kml
+*.xlsx
+*.txt

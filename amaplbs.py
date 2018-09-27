@@ -72,23 +72,25 @@ if __name__ == '__main__':
     # kw  = quote(keyword)
     import amapconfig
     fs = []
+    
+    if False:
 
-    if os.path.exists('output.geojson'):
-        shutil.move('output.geojson', 'output{}.geojson'.format(hash(time.time())))
+        if os.path.exists('docs/geojsons/output.geojson'):
+            shutil.move('docs/geojsons/output.geojson', 'docs/geojsons/output{}.geojson'.format(hash(time.time())))
 
-    for citycode in [
-        310101,310104,310105,310106,
-        310107,310109,310110,310112,
-        310113,310114,310115,310116,
-        310117,310118,310120,310151]:
-        for category in amapconfig.attractions:
-            fs += amap_poi(citycode, category)
-            save_pois(fs, 'output.geojson')
+        for citycode in [
+            310101,310104,310105,310106,
+            310107,310109,310110,310112,
+            310113,310114,310115,310116,
+            310117,310118,310120,310151]:
+            for category in amapconfig.hotels:
+                fs += amap_poi(citycode, category)
+                save_pois(fs, 'docs/geojsons/output.geojson')
     
     import glob
     from collections import defaultdict
 
-    outputs = glob.glob('output*.geojson')
+    outputs = glob.glob('docs/geojsons/output*.geojson')
     fs = defaultdict(list)
     fsh = set()
     for output in outputs:
