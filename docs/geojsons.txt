@@ -1,3 +1,4 @@
+sh-artmuseums.geojson
 juchang.geojson
 sh-0104.geojson
 sh-0108.geojson

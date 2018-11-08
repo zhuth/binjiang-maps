@@ -94,10 +94,64 @@ var toggleableLayerIds = [
 	['购物中心', 'sh-0601'],
 	['购物中心热力图', 'sh-0601-heatmap'],
 	['电竞馆', 'sh-djg-3z8o2h'],
-	['郊野公园', 'jygy']
+	['郊野公园', 'jygy'],
+	['艺术空间', 'artmuseums']
 ];
 
 map.on('load', function () {
+	map.addLayer({
+		"id": 'artmuseums',
+		"type": 'heatmap',
+		"source": {
+			'type': 'geojson',
+			'data': 'geojsons/sh-artmuseums.geojson',
+		},
+		"paint": {
+			// increase weight as diameter breast height increases
+			'heatmap-weight': {
+			  property: 'cnt',
+			  type: 'exponential',
+			  stops: [
+				[1, 0],
+				[62, 1]
+			  ]
+			},
+			// increase intensity as zoom level increases
+			'heatmap-intensity': {
+			  stops: [
+				[11, 1],
+				[15, 3]
+			  ]
+			},
+			// assign color values be applied to points depending on their density
+			'heatmap-color': [
+			  'interpolate',
+			  ['linear'],
+			  ['heatmap-density'],
+			  0, 'rgba(236,222,239,0)',
+			  0.2, 'rgb(208,209,230)',
+			  0.4, 'rgb(166,189,219)',
+			  0.6, 'rgb(103,169,207)',
+			  0.8, 'rgb(28,144,153)'
+			],
+			// increase radius as zoom increases
+			'heatmap-radius': {
+			  stops: [
+				[11, 15],
+				[15, 20]
+			  ]
+			},
+			// decrease opacity to transition into the circle layer
+			'heatmap-opacity': {
+			  default: 1,
+			  stops: [
+				[14, 1],
+				[15, 0]
+			  ]
+			},
+		  }
+	});
+	
 	for (var i = 0; i < toggleableLayerIds.length; i++) {
 		var id = toggleableLayerIds[i][1], disp_text = toggleableLayerIds[i][0];
 
@@ -127,6 +181,7 @@ map.on('load', function () {
 		layers.appendChild(link);
 	}
 });
+
 
 $.get('geojsons.txt', function (data) {
 	var lines = data.split('\n');
@@ -201,7 +256,7 @@ $.get('geojsons.txt', function (data) {
             ],
         } : {};
 			var fid = 'l-' + atype + '-' + id;
-			if (map.getLayer(fid) !== undefined) map.removeLayer('l-' + id);
+			if (map.getLayer(fid) !== undefined) map.removeLayer(fid);
 			map.addLayer({
 				"id": fid,
 				"type": atype,
@@ -214,6 +269,7 @@ $.get('geojsons.txt', function (data) {
 			});
 		}
 	});
+	
 });
 </script>
 

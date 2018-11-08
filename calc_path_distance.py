@@ -11,8 +11,11 @@ from amaplbs import save_pois
 from shapely.geometry import Polygon
 from pyproj import Proj, transform
 EARTH_RADIUS = 6378137
-
 MAX_DIST = 1000
+    
+wgs84 = Proj('+proj=longlat +datum=WGS84 +no_defs') 
+epsg26715 = Proj(init='epsg:26715')
+pj = lambda pt: transform(wgs84, epsg26715, pt[0], pt[1])
 
 paths = {}
 
@@ -103,8 +106,25 @@ def select_pois(fs, x):
     
 
 def read_pois(x):
-    return json.load(open(x + '.geojson'))['features']
+    return json.load(open('docs/geojsons/' + x + '.geojson'))['features']
+	
 
+def merge_coordinates(pois, radius=1000):
+	dels = set()
+	for ia, a in enumerate(pois):
+		if ia in dels: continue
+		for ib_, b in enumerate(pois[ia+1:]):
+			ib = ib_ + ia + 1
+			if ib in dels: continue
+			if get_dist(a['geometry']['coordinates'], b['geometry']['coordinates']) < radius:
+				dels.add(ib)
+				print(len(dels))
+	
+	for ib in sorted(dels, reverse=True):
+		del pois[ib]
+	return pois
+
+	
 if __name__ == '__main__':
     for kml in glob.glob('*.kml'):
         r = ET.parse(kml).getroot()
@@ -132,10 +152,6 @@ if __name__ == '__main__':
     # 
     # print(polygon_area(combine_paths(paths['pdresident'], paths['浦东'])) / get_len(paths['浦东']))
     # print(polygon_area(combine_paths(paths['pxident'], paths['浦西连结'])) / get_len(paths['浦西连结']))
-    
-    wgs84 = Proj('+proj=longlat +datum=WGS84 +no_defs') 
-    epsg26715 = Proj(init='epsg:26715')
-    pj = lambda pt: transform(wgs84, epsg26715, pt[0], pt[1])
     
     visited = set()
     pxlj = [pj(_) for _ in paths['浦西连结']]

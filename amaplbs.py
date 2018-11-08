@@ -50,7 +50,7 @@ def amap_poi(city, type):
         time.sleep(0.1)
         j=requests.get(w).content
         j=json.loads(j)
-        fs += [{'type':'Feature', 'geometry': {'type':'Point', 'coordinates': [[float(_) for _ in r['location'].split(',')]]}, 'properties':{'name':r['name'], 'biz':r['typecode'] + ' ' + r['type']}} for r in j['pois']]
+        fs += [{'type':'Feature', 'geometry': {'type':'Point', 'coordinates': [[float(_) for _ in r['location'].split(',')]]}, 'properties':{'name':r['name'], 'region': citycode, 'biz':r['typecode'] + ' ' + r['type']}} for r in j['pois']]
         i += 1
         pages = int(math.ceil(int(j['count']) / 20))
     return fs
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     import amapconfig
     fs = []
     
-    if False:
+    if True:
 
         if os.path.exists('docs/geojsons/output.geojson'):
             shutil.move('docs/geojsons/output.geojson', 'docs/geojsons/output{}.geojson'.format(hash(time.time())))
@@ -83,7 +83,7 @@ if __name__ == '__main__':
             310107,310109,310110,310112,
             310113,310114,310115,310116,
             310117,310118,310120,310151]:
-            for category in amapconfig.hotels:
+            for category in amapconfig.univs:
                 fs += amap_poi(citycode, category)
                 save_pois(fs, 'docs/geojsons/output.geojson')
     
