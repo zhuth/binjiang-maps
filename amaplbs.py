@@ -83,7 +83,7 @@ if __name__ == '__main__':
             310107,310109,310110,310112,
             310113,310114,310115,310116,
             310117,310118,310120,310151]:
-            for category in amapconfig.univs:
+            for category in amapconfig.factory:
                 fs += amap_poi(citycode, category)
                 save_pois(fs, 'docs/geojsons/output.geojson')
     
